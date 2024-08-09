@@ -1,0 +1,16 @@
+create table if not exists currency_exchange_service_to_trading(
+local_currency_code Integer not null,
+amount_to_be_converted Integer null,
+source_currency Integer null,
+target_country varchar(255) null,
+target_currency Integer null,
+biller_code char null,
+is_valid_nomination char null,
+unit_name varchar(255) null,
+exchange_ratedata_custodian_mapping_id varchar(255) null,
+creation_cr varchar(255) null,
+modified_cr varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint currency_exchange_service_to_trading_pk primary key(local_currency_code));
